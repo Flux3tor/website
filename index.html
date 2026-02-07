@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Flux3tor — Full Stack Developer</title>
+<meta name="description" content="Full stack developer building tools, experiments and small systems for the web.">
+
+<meta property="og:title" content="Flux3tor — Full Stack Developer">
+<meta property="og:description" content="Tools, experiments and systems.">
+<meta property="og:type" content="website">
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/favicon.svg">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/utilities.css">
+</head>
+
+<body>
+
+<div id="scroll-progress"></div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="logo">Flux3tor</div>
+    <nav>
+      <a href="#now">Now</a>
+      <a href="#projects">Projects</a>
+      <a href="#stack">Stack</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <h1>Flux3tor</h1>
+  <h2>Full Stack Developer</h2>
+  <p>I build tools, experiments, and small systems for the web.</p>
+</section>
+
+<section id="now" class="section">
+  <h2>Now</h2>
+  <ul>
+    <li>Building FluxPad</li>
+    <li>Learning systems, browsers and networking</li>
+    <li>Shipping small web experiments</li>
+  </ul>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <input id="project-search" placeholder="Search projects…" />
+
+  <div class="filters">
+    <button data-filter="all">All</button>
+    <button data-filter="web">Web</button>
+    <button data-filter="hardware">Hardware</button>
+    <button data-filter="experiment">Experiments</button>
+  </div>
+
+  <div id="project-list"></div>
+</section>
+
+<section id="stack" class="section">
+  <h2>Stack</h2>
+  <div class="stack">
+    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    <span>Python</span><span>Git</span><span>Linux</span>
+    <span>APIs</span><span>Arduino</span><span>GitHub</span><span>VS Code</span>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>About</h2>
+  <p>
+    I like understanding how things actually work. Most of what I build starts
+    as curiosity and turns into small tools or experiments that help me learn
+    faster. I enjoy breaking things, fixing them, and figuring out why they broke.
+  </p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <button id="copy-email">Copy email</button>
+</section>
+
+</main>
+
+<footer class="footer">
+  © <span id="year"></span> Flux3tor
+</footer>
+
+<div id="command-palette" class="hidden">
+  <input id="command-input" placeholder="Type a command…" />
+  <ul id="command-results"></ul>
+</div>
+
+<div id="toast"></div>
+
+<script src="js/app.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/search.js"></script>
+<script src="js/commandPalette.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/shortcuts.js"></script>
+<script src="js/easterEggs.js"></script>
+
+</body>
+</html>
