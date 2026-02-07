@@ -24,6 +24,14 @@
     "live": "https://explainmycode.flux3tor.xyz"
   },
   {
+    "name": "FluxOSINT",
+    "category": "web",
+    "status": "building",
+    "description": "OSINT toolkit and experiments platform.",
+    "github": "https://github.com/Flux3tor/fluxosint",
+    "live": "https://fluxosint.flux3tor.xyz"
+  },
+  {
     "name": "Glitchbound",
     "category": "experiment",
     "status": "building",
@@ -38,13 +46,5 @@
     "description": "Collection of small web experiments and prototypes.",
     "github": "https://github.com/Flux3tor/almostworks",
     "live": "https://flux3tor.xyz/almostworks"
-  },
-  {
-    "name": "FluxOSINT",
-    "category": "web",
-    "status": "building",
-    "description": "OSINT toolkit and experiments platform.",
-    "github": "https://github.com/Flux3tor/fluxosint",
-    "live": "https://fluxosint.flux3tor.xyz"
   }
 ]
