@@ -1,3 +1,5 @@
+import StatusBar from "@/components/StatusBar";
+
 export default function Home() {
   return (
     <main className="w-full">
@@ -32,6 +34,8 @@ export default function Home() {
           </a>
         </div>
 
+        <StatusBar />
+        
       </section>
 
     </main>
