@@ -1,7 +1,7 @@
 .reveal {
   opacity: 0;
-  transform: translateY(20px);
-  transition: all .6s ease;
+  transform: translateY(30px);
+  transition: opacity .8s ease, transform .8s ease;
 }
 
 .reveal.visible {
@@ -10,15 +10,13 @@
 }
 
 .nav a.active {
+  color: var(--text);
   border-bottom: 1px solid white;
-}
-
-.hidden {
-  display: none;
+  padding-bottom: 2px;
 }
 
 body {
-  animation: fadeIn .6s ease;
+  animation: fadeIn .8s ease;
 }
 
 @keyframes fadeIn {
@@ -29,4 +27,21 @@ body {
 ::selection {
   background: white;
   color: black;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
 }
