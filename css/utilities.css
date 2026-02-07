@@ -1,1 +1,32 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all .6s ease;
+}
 
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav a.active {
+  border-bottom: 1px solid white;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  animation: fadeIn .6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+::selection {
+  background: white;
+  color: black;
+}
