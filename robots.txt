@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://flux3tor.xyz/sitemap.xml
