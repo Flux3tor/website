@@ -3,149 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flux3tor</title>
 
-<title>Flux3tor — Full Stack Developer</title>
-<meta name="description" content="Full stack developer building tools, experiments and small systems for the web.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<meta property="og:title" content="Flux3tor — Full Stack Developer">
-<meta property="og:description" content="Tools, experiments and systems.">
-<meta property="og:type" content="website">
-
-<link rel="manifest" href="manifest.json">
-<link rel="icon" href="assets/favicon.svg">
-
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/components.css">
-<link rel="stylesheet" href="css/utilities.css">
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div id="scroll-progress"></div>
+<a href="https://hackclub.com/" target="_blank">
+  <img class="flag" src="https://assets.hackclub.com/flag-orpheus-left.svg">
+</a>
 
-<header class="nav">
-  <div class="nav-inner">
-    <div class="logo">Flux3tor</div>
-    <nav>
-      <a href="#now">Now</a>
-      <a href="#projects">Projects</a>
-      <a href="#stack">Stack</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+<main class="card">
 
-<main>
+  <h1 id="typing" class="name"></h1>
+  <p class="title">Full Stack Developer</p>
 
-<section class="hero">
-  <h1>Flux3tor</h1>
-  <h2>Full Stack Developer</h2>
-  <p>I build tools, experiments, and small systems for the web.</p>
-</section>
-
-<section class="section">
-  <h2>Philosophy</h2>
-  <p>
-    I enjoy understanding how software behaves beyond the UI.
-    Most of what I build starts as curiosity and turns into small tools,
-    experiments, or hardware projects that help me learn faster.
+  <p class="bio">
+    heyo, i'm Flux3tor, a teen developer from india building tools,
+    experiments and weird shi-
   </p>
-</section>
 
-<section id="now" class="section">
-  <h2>Currently</h2>
-  <ul>
-    <li>Building FluxPad — hardware + software macropad</li>
-    <li>Learning browsers, networking and system fundamentals</li>
-    <li>Shipping small web tools and experiments</li>
-  </ul>
-</section>
-
-<section id="projects" class="section">
-  <h2>Projects</h2>
-
-  <input id="project-search" placeholder="Search projects…" />
-
-  <div class="filters">
-    <button data-filter="all">All</button>
-    <button data-filter="web">Web</button>
-    <button data-filter="hardware">Hardware</button>
-    <button data-filter="experiment">Experiments</button>
+  <div class="meta">
+    <span id="time"></span>
+    <span>India</span>
   </div>
 
-  <div id="project-list"></div>
-</section>
+  <div class="links">
+    <a class="linkBtn" href="https://github.com/Flux3tor" target="_blank">GitHub</a>
+    <a class="linkBtn" href="https://instagram.com/flux3tor" target="_blank">Instagram</a>
+    <span class="linkBtn" id="copyEmailBtn">me@flux3tor.xyz</span>
+  </div>
 
-<section id="stack" class="section">
-  <h2>Stack</h2>
+  <h3 class="sectionTitle">Stack</h3>
   <div class="stack">
-    <span>HTML</span><span>CSS</span><span>JavaScript</span>
-    <span>Python</span><span>Git</span><span>Linux</span>
-    <span>APIs</span><span>Arduino</span><span>GitHub</span><span>VS Code</span>
+    <img title="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+    <img title="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+    <img title="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+    <img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+    <img title="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+    <img title="Linux" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
+    <img title="VSCode" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
+    <img title="Arduino" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg">
   </div>
-</section>
 
-<section class="section">
-  <h2>Timeline</h2>
-  <ul>
-    <li>2025 — Started learning web development</li>
-    <li>2026 — Built Explain My Code</li>
-    <li>2026 — Started FluxPad hardware project</li>
-    <li>2026 — Launched flux3tor.xyz</li>
-  </ul>
-</section>
-
-<section class="section">
-  <h2>Exploring</h2>
-  <ul>
-    <li>Browser internals</li>
-    <li>Networking fundamentals</li>
-    <li>System design basics</li>
-    <li>Hardware + software interaction</li>
-  </ul>
-</section>
-
-<section id="about" class="section">
-  <h2>About</h2>
-  <p>
-    I like breaking things, fixing them, and figuring out why they broke.
-    I build projects to understand how real systems behave and improve
-    by shipping and iterating.
-  </p>
-</section>
-
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <button id="copy-email">Copy email</button>
-</section>
+  <h3 class="sectionTitle">Projects</h3>
+  <div id="projectsDiv" class="projects"></div>
 
 </main>
 
-<footer class="footer">
-  <p>Built and maintained by Flux3tor</p>
-  <p>Domain: flux3tor.xyz</p>
-  <p><a href="https://github.com/Flux3tor" target="_blank">GitHub</a></p>
-  <p>Last updated: <span id="year"></span></p>
-</footer>
-
-<div id="command-palette" class="hidden">
-  <input id="command-input" placeholder="Type a command…" />
-  <ul id="command-results"></ul>
-</div>
-
+<div class="credits">© <span id="year"></span> flux3tor</div>
 <div id="toast"></div>
 
-<script src="js/app.js"></script>
-<script src="js/navigation.js"></script>
-<script src="js/projects.js"></script>
-<script src="js/search.js"></script>
-<script src="js/commandPalette.js"></script>
-<script src="js/animations.js"></script>
-<script src="js/toast.js"></script>
-<script src="js/shortcuts.js"></script>
-<script src="js/easterEggs.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
