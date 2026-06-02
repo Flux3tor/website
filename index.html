@@ -1,65 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
 <title>Flux3tor</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta
+  name="description"
+  content="13 y/o developer from india building software, hardware and weird internet stuff."
+>
 
-<link rel="icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+<link
+  rel="preconnect"
+  href="https://fonts.googleapis.com"
+>
+
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+>
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+
+<link rel="icon" type="image/png" href="/images/pfp.jpg">
+
 </head>
 
 <body>
 
-<a href="https://hackclub.com/" target="_blank">
-  <img class="flag" src="https://assets.hackclub.com/flag-orpheus-left.svg">
+<a
+href="https://hackclub.com"
+target="_blank"
+>
+<img
+class="flag"
+src="https://assets.hackclub.com/flag-orpheus-left.svg"
+alt="Hack Club"
+>
 </a>
 
-<main class="card">
+<div class="aurora"></div>
 
-  <h1 id="typing" class="name"></h1>
-  <p class="title">Full Stack Developer</p>
+<main class="container">
 
-  <p class="bio">
-    heyo, i'm Flux3tor, a teen developer from india building tools,
-    experiments and weird shi-
-  </p>
+  <section class="hero">
 
-  <div class="meta">
-    <span id="time"></span>
-    <span>India</span>
-  </div>
+    <img
+    src="images/pfp.jpg"
+    alt="Flux3tor"
+    class="pfp reveal"
+    >
 
-  <div class="links">
-    <a class="linkBtn" href="https://github.com/Flux3tor" target="_blank">GitHub</a>
-    <a class="linkBtn" href="https://instagram.com/flux3tor" target="_blank">Instagram</a>
-    <span class="linkBtn" id="copyEmailBtn">me@flux3tor.xyz</span>
-  </div>
+    <h1 class="name reveal">
+      Flux3tor
+    </h1>
 
-  <h3 class="sectionTitle">Stack</h3>
-  <div class="stack">
-    <img title="HTML" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-    <img title="CSS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
-    <img title="JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-    <img title="Python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
-    <img title="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
-    <img title="Linux" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
-    <img title="VSCode" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
-    <img title="Arduino" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg">
-  </div>
+    <p class="subtitle reveal">
+      full stack developer · weird internet shi-
+    </p>
 
-  <h3 class="sectionTitle">Projects</h3>
-  <div id="projectsDiv" class="projects"></div>
+    <div class="bio reveal">
+
+      <p>
+        heyo, i'm flux3tor, a 13 y/o developer from india building software, hardware and weird internet shi-
+      </p>
+
+      <p>
+        i like messing around with systems, electronics and random ideas that probably shouldnt exist but somehow do. sometimes they turn into actual things, sometimes they break horribly and thats fun too.
+      </p>
+
+      <p>
+        most days im writing code, soldering stuff, tweaking ui, exploring random rabbit holes and learning new things along the way. i dont really care about making things perfect, i just like building cool shi- and seeing how far ideas can go.
+      </p>
+
+      <p>
+        this site is just my small corner of the internet :)
+      </p>
+
+    </div>
+
+    <div class="links reveal">
+
+      <a
+      href="https://github.com/Flux3tor"
+      target="_blank"
+      >
+      GitHub
+      </a>
+
+      <a
+      href="https://hackclub.enterprise.slack.com/team/U0A6A0J7UE6"
+      target="_blank"
+      >
+      Slack
+      </a>
+
+      <span id="copyEmail">
+        me@flux3tor.xyz
+      </span>
+
+    </div>
+
+    <div class="meta reveal">
+
+      <span id="time"></span>
+
+      <span>•</span>
+
+      <span>v3</span>
+
+    </div>
+
+  </section>
 
 </main>
 
-<div class="credits">© <span id="year"></span> flux3tor</div>
 <div id="toast"></div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
